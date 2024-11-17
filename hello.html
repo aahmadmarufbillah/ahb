@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফ্রেমিং ও রিসেন্সি প্রভাব এবং গবেষণা ফলাফল</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 10px;
+            border-left: 4px solid #4caf50;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        canvas {
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for mobile devices */
+        @media screen and (max-width: 768px) {
+            main {
+                padding: 15px;
+            }
+            table {
+                font-size: 14px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+            main {
+                padding: 10px;
+            }
+            table, canvas {
+                width: 100%;
+                font-size: 12px;
+            }
+            .highlight {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ফ্রেমিং ও রিসেন্সি প্রভাব এবং গবেষণা ফলাফল</h1>
+</header>
+
+<main>
+    <h2>ফ্রেমিং প্রভাব কী?</h2>
+    <p>
+        ফ্রেমিং হলো একটি মনস্তাত্ত্বিক প্রক্রিয়া যেখানে কোন একটি তথ্য বা বিকল্পকে এমনভাবে উপস্থাপন করা হয়, যাতে লোকেরা নির্দিষ্টভাবে একটি নির্ধারিত সিদ্ধান্ত নেয়। 
+        এটি মানুষের সিদ্ধান্ত গ্রহণের প্রক্রিয়াকে নিয়ন্ত্রণ করতে ব্যবহৃত হয়।
+    </p>
+    <div class="highlight">
+        <strong>উদাহরণ:</strong> 
+        যদি আপনাকে ধাপে ধাপে মাস নির্বাচন করতে বলা হয় এবং বিকল্পগুলো এমনভাবে সাজানো হয় যে ধীরে ধীরে আপনার বিকল্প সংকুচিত হয়ে ডিসেম্বরে পৌঁছায়, 
+        তখন এটি ফ্রেমিং প্রভাবের মাধ্যমে ঘটানো হয়।
+    </div>
+
+    <h2>রিসেন্সি প্রভাব কী?</h2>
+    <p>
+        রিসেন্সি প্রভাব হল একটি মনস্তাত্ত্বিক প্রভাব যেখানে মানুষ তার স্মৃতিতে সর্বশেষ ঘটনা বা তথ্যগুলো বেশি মনে রাখে। এটি **স্মৃতিশক্তি** ও **ফিরে আসা সিদ্ধান্ত** গ্রহণে প্রভাব ফেলে। 
+        যখন কেউ একটি তালিকা বা ধারাবাহিক তথ্য দেখেন, তখন তিনি সাধারণত শেষের দিকে আসা তথ্যকে বেশি মনে রাখেন। 
+    </p>
+    <div class="highlight">
+        <strong>উদাহরণ:</strong> 
+        যদি আপনি একে একে কিছু নাম শুনেন, তারপর সেগুলোর মধ্যে থেকে কিছু মনে রাখতে বলা হয়, তাহলে আপনি সাধারণত শেষের কিছু নাম বেশি মনে রাখবেন। 
+        এটি রিসেন্সি প্রভাবের মাধ্যমে ঘটে।
+    </div>
+
+    <h2>নভেম্বর-ডিসেম্বর কেন নির্বাচিত হলো?</h2>
+    <p>
+        ফ্রেমিং ও রিসেন্সি প্রভাবের কারণে, নভেম্বর-ডিসেম্বর মাসগুলি নির্বাচন করার সম্ভাবনা বাড়ে। 
+        প্রথমত, ফ্রেমিং প্রভাবের মাধ্যমে, এই মাসগুলোকে বিশেষভাবে উপস্থাপন করা হয় এবং 
+        দ্বিতীয়ত, রিসেন্সি প্রভাবের কারণে, এগুলি সমাপ্তির কাছাকাছি হওয়ায় মানুষের মনে বেশি জায়গা করে নেয়।
+    </p>
+
+    <h2>গবেষণার ফলাফল</h2>
+    <p>
+        ১২ জনের গবেষণায় দেখা গেছে, ফ্রেমিং এবং রিসেন্সি প্রভাবের মাধ্যমে <strong>৭৮.৭৮% মানুষ</strong> নভেম্বর-ডিসেম্বর মাস বেছে নিয়েছেন, যেখানে বাকিরা অন্যান্য মাস বেছে নিয়েছেন। 
+        নিচে পাই চার্টের মাধ্যমে এটি উপস্থাপন করা হয়েছে।
+    </p>
+
+    <canvas id="pieChart" width="400" height="400"></canvas>
+
+    <h2>নির্বাচিত মাসের তালিকা</h2>
+    <p>নিচে ১২ জন ব্যক্তির নির্বাচিত মাসের তালিকা দেয়া হলো:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>ক্রমিক নং</th>
+                <th>নাম</th>
+                <th>নির্বাচিত মাস</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>০১</td>
+                <td>Muhammad Pappu</td>
+                <td>নভেম্বর</td>
+            </tr>
+            <tr>
+                <td>০২</td>
+                <td>Md. Ridoy Khan</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>০৩</td>
+                <td>Abir Mahmud</td>
+                <td>সেপ্টেম্বর</td>
+            </tr>
+            <tr>
+                <td>০৪</td>
+                <td>Md. Ebrahim Khalil</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>০৫</td>
+                <td>Prince Hasib</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>০৬</td>
+                <td>Rafsan Chowdhury</td>
+                <td>মার্চ</td>
+            </tr>
+            <tr>
+                <td>০৭</td>
+                <td>Our Jisan</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>০৮</td>
+                <td>Md. Manik</td>
+                <td>জানুয়ারি</td>
+            </tr>
+            <tr>
+                <td>০৯</td>
+                <td>R H Mahin Ahmod</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>১০</td>
+                <td>Anik</td>
+                <td>সেপ্টেম্বর</td>
+            </tr>
+            <tr>
+                <td>১১</td>
+                <td>নাম আজানা</td>
+                <td>ডিসেম্বর</td>
+            </tr>
+            <tr>
+                <td>১২</td>
+                <td>MN Nahid Islam</td>
+                <td>নভেম্বর</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>© ২০২৪, ফ্রেমিং ও রিসেন্সি গবেষণা ও ফলাফল</p>
+</footer>
+
+<script>
+    // পাই চার্ট তৈরি করা
+    const ctx = document.getElementById('pieChart').getContext('2d');
+    const data = {
+        labels: ['নভেম্বর-ডিসেম্বর', 'অন্যান্য মাস'],
+        datasets: [{
+            data: [66.66, 33.33],
+            backgroundColor: ['#4caf50', '#f44336'],
+        }]
+    };
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'গবেষণার ফলাফল: নভেম্বর-ডিসেম্বর বনাম অন্যান্য মাস'
+                }
+            }
+        }
+    };
+    new Chart(ctx, config);
+</script>
+
+</body>
+</html>
